@@ -14,6 +14,8 @@ function Navbar() {
         {/* Link ke halaman Home */}
         <Link to="/" className="hover:underline">Home</Link>
 
+      <Link to="/about" className="hover:underline">About</Link>
+
         {/* Link ke halaman Quotes */}
         <Link to="/quotes" className="hover:underline">Quotes</Link>
 
