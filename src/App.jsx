@@ -1,6 +1,6 @@
 // import modul dan komponen yang dibutuhkan
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// Digunakan untuk routing halaman (pindah halaamn tanpa reload)
+// Digunakan untuk routing halaman (pindah halaman tanpa reload)
 
 // import Navbar & Footer yang akan ditampilkan di semua halaman
 import Navbar from "./components/Navbar";
@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Quotes from "./pages/Quotes";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Routes>
             {/* menampilkan halaman Home */}
             <Route path="/" element={<Home />} />
+
+            <Route path="/about" element={<About />}/>
 
             {/* menampilkan halaman Login */}
             <Route path="/login" element={<Login />} />
